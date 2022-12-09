@@ -8,12 +8,22 @@ body>div{
     padding-top: 59px;
 }
 
-header{
+nav{
     height: 59px;
     border: 1px solid black;
+
     position: fixed;
     top: 0;
     width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    height: 59px;
+    border: 1px solid black;
+    padding-top: 59px;
 }
 
 #first_div{
