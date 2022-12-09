@@ -42,8 +42,7 @@ nav div:hover {
 
 header {
     height: 450px;
-    border: 1px solid black;
-    padding-top: 59px;
+    /* padding-top: 59px; */
 
     background-image: url(background.png);
 
@@ -75,8 +74,6 @@ header button:hover {
 }
 
 #disciplines {
-    border: 1px solid black;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,8 +103,6 @@ header button:hover {
 }
 
 .card_box>div {
-    /* border: 1px solid black; */
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,6 +111,10 @@ header button:hover {
     border-radius: 10px;
 
     padding: 15px;
+}
+
+.card_box>div:hover {
+    background-color: #EDE1E1;
 }
 
 .card_box>div>div {
@@ -142,7 +141,6 @@ header button:hover {
 }
 
 #random_text {
-    /* height: 409px; */
     background: linear-gradient(#B6EAF7, #CDE33C);
     display: flex;
     flex-direction: column;
@@ -177,10 +175,71 @@ img {
 
 #calc {
     height: 499px;
-    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+.calc_head {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: justify;
 
+    margin-bottom: 30px;
+}
+
+form {
+    border: thick double black;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+
+    width: 400px;
+    height: 346px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+}
+
+form>input {
+    height: 36px;
+    width: 300px;
+    margin: 19px 50px;
+
+    background-color: #FFFFFF;
+    border: 0px;
+}
+
+.calc_panel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calc_panel>div {
+    width: 100px;
+    height: 35px;
+    background-color: white;
+
+    margin: 9px 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc_panel>div:hover {
+    background-color: grey;
+    user-select: none;
+}
 
 footer {
     height: 51px;
