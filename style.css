@@ -32,7 +32,7 @@ nav div a {
     overflow: hidden;
 }
 
-nav div{
+nav div {
     display: flex;
 }
 
@@ -53,36 +53,92 @@ header {
     justify-content: space-around;
 }
 
-header h1{
+header h1 {
     color: #EBF90A;
     font-style: italic;
-    
+
 }
 
-header button{
+header button {
     border: 0px;
     background-color: white;
     border-radius: 10px;
     width: 284px;
     height: 61px;
-    
+
     transition: 1s;
 }
 
-header button:hover{
+header button:hover {
     transform: scale(1.2);
     background-color: grey;
 }
 
-#first_div {
+#disciplines {
     border: 1px solid black;
-    height: 531px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 100px;
 }
 
-#disciplines {
-    height: 757px;
-    border: 1px solid black;
+.disciplines_head {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.disciplines_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    padding-top: 60px;
+}
+
+.card_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    padding-top: 30px; 
+}
+
+.card_box>div {
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0px 2px 10px rgba(128, 128, 128, 0.25);
+    border-radius: 10px;
+
+    padding: 15px;
+}
+
+.card_box>div>div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card_box>div>div>div{
+    padding-top: 15px;
+}
+
+.card_box>div>div>div:nth-child(1) {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.card_box>div>div>div:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
 }
 
 #random_text {
