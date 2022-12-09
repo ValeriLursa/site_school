@@ -1,4 +1,48 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body>div{
+    padding-top: 59px;
+}
+
+header{
+    height: 59px;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#first_div{
+    border: 1px solid black;
+    height: 531px;
+    
+}
+
+#disciplines{
+    height: 757px;
+    border: 1px solid black;
+}
+
+#random_text{
+    height: 409px;
+    border: 1px solid black;
+}
+
+img{
+    width: 221px;
+    height: 204px;
+}
+
+#calc{
+    height: 499px;
+    border: 1px solid black;
+}
+
+footer{
+    height: 51px;
+    border: 1px solid black;
 }
