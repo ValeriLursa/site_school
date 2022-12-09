@@ -10,7 +10,7 @@ body>div {
 
 nav {
     height: 59px;
-    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
 
     position: fixed;
     top: 0;
@@ -20,7 +20,7 @@ nav {
     justify-content: center;
     /* align-items: center; */
 
-    font-size: 14px;
+    font-size: 16px;
 }
 
 nav div a {
@@ -29,6 +29,7 @@ nav div a {
     height: 100%;
     text-align: center;
     padding: 18px 16px;
+    overflow: hidden;
 }
 
 nav div{
@@ -64,6 +65,7 @@ header button{
     border-radius: 10px;
     width: 284px;
     height: 61px;
+    
     transition: 1s;
 }
 
