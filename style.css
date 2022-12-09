@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-body>div{
+body>div {
     padding-top: 59px;
 }
 
-nav{
+nav {
     height: 59px;
     border: 1px solid black;
 
@@ -18,41 +18,87 @@ nav{
 
     display: flex;
     justify-content: center;
+    /* align-items: center; */
+
+    font-size: 14px;
 }
 
-header{
-    height: 59px;
+nav div a {
+    color: black;
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+    padding: 18px 16px;
+}
+
+nav div{
+    display: flex;
+}
+
+nav div:hover {
+    background-color: gray;
+}
+
+header {
+    height: 450px;
     border: 1px solid black;
     padding-top: 59px;
+
+    background-image: url(background.png);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#first_div{
-    border: 1px solid black;
-    height: 531px;
+header h1{
+    color: #EBF90A;
+    font-style: italic;
     
 }
 
-#disciplines{
+header button{
+    border: 0px;
+    background-color: white;
+    border-radius: 10px;
+    width: 284px;
+    height: 61px;
+    transition: 1s;
+}
+
+header button:hover{
+    transform: scale(1.2);
+    background-color: grey;
+}
+
+#first_div {
+    border: 1px solid black;
+    height: 531px;
+
+}
+
+#disciplines {
     height: 757px;
     border: 1px solid black;
 }
 
-#random_text{
+#random_text {
     height: 409px;
     border: 1px solid black;
 }
 
-img{
+img {
     width: 221px;
     height: 204px;
 }
 
-#calc{
+#calc {
     height: 499px;
     border: 1px solid black;
 }
 
-footer{
+footer {
     height: 51px;
     border: 1px solid black;
 }
