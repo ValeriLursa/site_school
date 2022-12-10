@@ -211,11 +211,13 @@ form {
 
 form>input {
     height: 36px;
-    width: 300px;
+    width: calc(300px - 20px);
     margin: 19px 50px;
 
     background-color: #FFFFFF;
     border: 0px;
+    text-align: right;
+    padding-right: 20px;
 }
 
 .calc_panel {
@@ -260,6 +262,8 @@ footer {
 @media screen and (max-width: 600px) {
     nav {
         flex-direction: column;
+
+        position: absolute;
     }
 
     nav div {
@@ -314,17 +318,17 @@ footer {
 
     footer {
         padding: 10px 15px;
-        
+
     }
 
-    footer>div{
+    footer>div {
         font-weight: 400;
         font-size: 13px;
         line-height: 19px;
         text-align: left;
     }
 
-    footer>div:first-child{
+    footer>div:first-child {
         padding-right: 20px;
     }
 }
