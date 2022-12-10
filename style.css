@@ -5,20 +5,18 @@
 }
 
 body>div {
-    padding-top: 59px;
+    padding-top: 53px;
 }
 
 nav {
-    height: 59px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
 
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
 
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 
     font-size: 16px;
 }
@@ -42,7 +40,6 @@ nav div:hover {
 
 header {
     height: 450px;
-    /* padding-top: 59px; */
 
     background-image: url(background.png);
 
@@ -55,7 +52,9 @@ header {
 header h1 {
     color: #EBF90A;
     font-style: italic;
-
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
 }
 
 header button {
@@ -100,6 +99,7 @@ header button:hover {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     padding-top: 30px;
+    flex-wrap: nowrap;
 }
 
 .card_box>div {
@@ -157,6 +157,7 @@ header button:hover {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
+    text-align: center;
 
     padding-bottom: 42px;
 }
@@ -174,12 +175,11 @@ img {
 }
 
 #calc {
-    height: 499px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    padding-bottom: 30px;
 }
 
 .calc_head {
@@ -255,4 +255,57 @@ footer {
     font-size: 16px;
     line-height: 19px;
     text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav div {
+        flex-direction: column;
+    }
+
+    .back {
+        height: calc(54px*3);
+    }
+
+    header>h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 49px;
+    }
+
+    #disciplines{
+        margin: 0px;
+    }
+
+    .card_box {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #random_text{
+        padding: 10px;
+    }
+
+    .promo{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    form{
+        width: 320px;
+        height: 525px;
+    }    
+    
+    .disciplines_head{
+        
+    }
+
+    .head_promo,
+    .calc_head{
+        font-size: 27px;
+    }
 }
